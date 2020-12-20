@@ -30,3 +30,6 @@ V případě konceptu "bolest levé končetiny" mají tyto dvě vazby navíc spe
 Správa takto rozsáhlé taxonomie vyžaduje zjednodušit popis tvorby konceptů. Právě formální definice poskytují silný nástroj, který lze využít pro odvození nových částí hierarchie (`Is a` vazeb). Pro tyto účely se využívá tzv. automatické dokazování v deskripční logice pomocí jazyka [OWL-EL](https://www.w3.org/TR/owl2-profiles/#OWL_2_EL). Proto, ačkoliv v taxonomii SNOMED-CT nejsou explicitně uvedeny žádné koncepty, které by byly specializacemi bolesti v levé dolní končetině (`Is a` `Pain in Left Lower Limb`), pomocí automatické klasifikace je lze odvodit - jedná se např. o koncept `Greater trochanteric pain syndrome of left lower limb`.
 
 Kromě takto jednoduchých vztahů, je možné z předpokládaných typů konceptů a vazeb "konstruovat" složitější dotazy pomocí jazyka Expression Constraint Language (ECL). Např. pro zjištění, které typy paralýzy mohou být způsobeny problémem centrálního nervového systému `<< 29426003 | Paralytic syndrome |: << 42752001 | Due to | = << 246556002 | Central nervous system finding |`. Výsledkem takového dotazu je např. koncept `Acute paralysis due to lesion of spinal cord` (SCTID 698755001).
+
+## Kam dál?
+- proklikejte si SNOMED-CT pomocí [online prohlížeče](https://browser.ihtsdotools.org/)
